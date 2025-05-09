@@ -1,103 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>BetaCraft - Beta 1.7.3 Minecraft Server</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #1e1e1e;
-            color: #f0f0f0;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        header, footer {
-            background-color: #333;
-            padding: 1em;
-            text-align: center;
-        }
-        nav {
-            margin: 0 auto;
-            text-align: center;
-            padding: 1em;
-        }
-        nav a {
-            color: #f0f0f0;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            max-width: 900px;
-            margin: 2em auto;
-            padding: 0 1em;
-        }
-        h1, h2 {
-            color: #4caf50;
-        }
-        ul {
-            list-style-type: square;
-        }
-    </style>
-</head>
-<body>
-
 <header>
     <h1>Welcome to BetaCraft</h1>
     <p>Survive, build, and thrive in Minecraft Beta 1.7.3</p>
 </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#features">Features</a>
-    <a href="#rules">Rules</a>
-    <a href="#community">Community</a>
-</nav>
+<!--
+  <<< Author notes: Step 2 >>>
+  Start this step by acknowledging the previous step.
+  Define terms and link to docs.github.com.
+  Historic note: previous version checked for empty pull request, changed to the correct theme `minima`.
+-->
 
-<div class="container">
-    <section id="about">
-        <h2>About BetaCraft</h2>
-        <p><strong>BetaCraft</strong> is a dedicated Minecraft Beta 1.7.3 survival server that blends nostalgic gameplay with fresh mechanics. Whether you're into town-building, running your own shop, or just kicking back with friends, BetaCraft has something for you.</p>
-        <ul>
-            <li>A welcoming, tight-knit community</li>
-            <li>Active and engaged developers</li>
-            <li>Relaxed and friendly environment</li>
-        </ul>
-    </section>
+## Step 2: Configure your site
 
-    <section id="features">
-        <h2>Gameplay Features</h2>
-        <ul>
-            <li>Player-built towns</li>
-            <li>Economy driven by players</li>
-            <li>Ongoing community events</li>
-            <li>Frequent quality-of-life improvements</li>
-        </ul>
-    </section>
+_You turned on GitHub Pages! :tada:_
 
-    <section id="rules">
-        <h2>In-Game Rules</h2>
-        <ul>
-            <li>No griefing or destruction of others' builds</li>
-            <li>No harming animals (especially dogs) or stealing</li>
-            <li>Ask permission before building near another player's town</li>
-            <li>Be yourself and have fun!</li>
-            <li>No hacks, cheats, or x-ray mods</li>
-            <li>Rules are subject to change for community balance</li>
-        </ul>
-    </section>
+We'll work in a branch, `my-pages`, that I created for you to get this site looking great. :sparkle:
 
-    <section id="community">
-        <h2>Join the Community</h2>
-        <p>Chat with us, suggest features, or join in on events. More ways to connect coming soon!</p>
-        <!-- You can add a Discord invite or other link here -->
-    </section>
-</div>
+Jekyll uses a file titled `_config.yml` to store settings for your site, your theme, and reusable content like your site title and GitHub handle. You can check out the `_config.yml` file on the **Code** tab of your repository.
+
+We need to use a blog-ready theme. For this activity, we will use a theme named "minima".
+
+### :keyboard: Activity: Configure your site
+
+1. Browse to the `_config.yml` file in the `my-pages` branch.
+1. In the upper right corner, open the file editor.
+1. Add a `theme:` set to **minima** so it shows in the `_config.yml` file as below:
+   ```yml
+   theme: minima
+   ```
+1. (optional) You can modify the other configuration variables such as `title:`, `author:`, and `description:` to further customize your site.
+1. Commit your changes.
+1. (optional) Create a pull request to view all the changes you'll make throughout this course. Click the **Pull Requests** tab, click **New pull request**, set `base: main` and `compare:my-pages`.
+1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
 
 <footer>
     <p>&copy; 2025 BetaCraft Server | Beta 1.7.3 Minecraft</p>
 </footer>
-
-</body>
-</html>
